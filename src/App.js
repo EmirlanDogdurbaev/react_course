@@ -13,8 +13,7 @@ function App() {
         <Routes>
           <Route path="profile" element={<Profile />}></Route>
           <Route path="notes" element={<Notes />}></Route>
-
-          <Route path="notes" element={<Favorites />}></Route>
+          <Route path="favorites" element={<Favorites />}></Route>
         </Routes>
       </>
     </div>
