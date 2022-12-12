@@ -8,13 +8,15 @@ import Favorites from "./components/Favorites/Favorites";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route path="notes" element={<Notes />}></Route>
-        <Route path="profile" element={<Profile />}></Route>
+      <>
+        <Header />
+        <Routes>
+          <Route path="profile" element={<Profile />}></Route>
+          <Route path="notes" element={<Notes />}></Route>
 
-        <Route path="notes" element={<Favorites />}></Route>
-      </Routes>
+          <Route path="notes" element={<Favorites />}></Route>
+        </Routes>
+      </>
     </div>
   );
 }
